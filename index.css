@@ -1,0 +1,24 @@
+.submenu-item {
+  display: none;
+}
+.menu-item:hover .submenu-item {
+  display: block;
+}
+* {
+  font-family: "Caveat", cursive;
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  opacity: o.9;
+  color: #817e69;
+}
+#underlines {
+  text-decoration: none;
+}
+#weight {
+  font-weight: 900;
+}
+#footer {
+  color: #0097b2;
+  font-weight: 900;
+}

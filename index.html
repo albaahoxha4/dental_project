@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>All Smiles Dental</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Dentalist</title>
+    <link rel="stylesheet" href="./index.css" type="text/css" />
   </head>
   <body>
-    <h1>All Smiles Dental</h1>
     <!-- Pjesa e Header-it ku perfshihen linqet brenda web site-it (ne cdo web page)-->
     <header>
       <figure>
         <img
+          id="logo"
           class="img"
-          src="Logo/All-Smiles_new.png"
-          alt="All smiles logo"
+          src="denalist.png"
+          alt="Dentalist logo"
           height="200"
           width="200"
         />
       </figure>
 
-      <nav>
+      <nav class="nav-menu">
         <ul>
-          <li>
-            Booking
+          <li class="menu-item" style="color: #494931">
+            <strong style="color: #0097b2" id="weight">Booking</strong>
             <ul>
-              <li><a href="Booking/appointment.html"> Appointment</a></li>
-              <li><a href="Booking/emergency-care.html">Emergency Care</a></li>
+              <li class="submenu-item">
+                <a href="Booking/appointment.html" id="underlines">
+                  Appointment
+                </a>
+              </li>
             </ul>
           </li>
 
-          <li>
-            Home Page
+          <li class="menu-item" style="color: #494931">
+            <strong style="color: #0097b2" id="weight"> Home Page</strong>
             <ul>
-              <li>
-                <a href="Home Page/dental-services.html">Dental Services</a>
-              </li>
-              <li><a href="Home Page/introduction.html"> Introduction</a></li>
-            </ul>
-          </li>
-          <li>
-            Resources
-            <ul>
-              <li>
-                <a href="Resources/dental-hygiene.html">Dental Hygiene</a>
+              <li class="submenu-item" style="color: #494931">
+                <a href="Home Page/dental-services.html" id="underlines"
+                  >Dental-services</a
+                >
               </li>
             </ul>
           </li>
-          <li>
-            Services Page
+          <li class="menu-item" style="color: #494931">
+            <strong style="color: #0097b2" id="weight">Resources</strong>
             <ul>
-              <li><a href="Services Page/information.html">Information</a></li>
-              <li><a href="Services Page/treatments.html">Treatments</a></li>
+              <li class="submenu-item">
+                <a href="Resources/dental-hygiene.html" id="underlines"
+                  >dental-hygiene</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item" style="color: #494931">
+            <strong style="color: #0097b2" id="weight">Services</strong>
+            <ul>
+              <li class="submenu-item">
+                <a href="Services Page/treatments.html" id="underlines"
+                  >Treatments</a
+                >
+              </li>
             </ul>
           </li>
         </ul>
@@ -108,10 +117,10 @@
 
     <!-- Pjesa e footer-it qe do te shfaqet ne te gjitha linqet e website-it -->
     <footer>
-      <nav>
+      <nav id="footer">
         Forms Of Contact
-        <span class="number"> +383 44 123 123 </span>
-        <span class="location">
+        <span class="number" id="footer"> +383 44 123 123 </span>
+        <span class="location" id="footer">
           Kosovo, Prishtina <br />
           Street: Rruga B
         </span>
