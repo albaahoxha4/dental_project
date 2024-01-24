@@ -1,0 +1,112 @@
+body {
+  font-family: proxima-nova;
+}
+
+h1,
+h4 {
+  color: #333;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+aside {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+aside:first-child {
+  margin-top: 50px;
+}
+
+aside:last-child {
+  border-bottom: none;
+}
+
+.aside-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.hiring-info {
+  background-color: #efefef;
+  border-radius: 10px;
+  border-bottom: none;
+  padding: 0 20px;
+}
+
+aside h4 {
+  text-transform: uppercase;
+}
+
+.contact {
+  font-style: oblique;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  font-size: 16px;
+}
+
+.contat-number {
+  font-style: oblique;
+}
+.hiring-info {
+  font-style: oblique;
+}
+.hours-secition {
+  font-style: oblique;
+}
+.emergency-secition {
+  font-style: oblique;
+}
+.parking-secition {
+  font-style: oblique;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.google-maps hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.horizontal-divider {
+  border: 0.5px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

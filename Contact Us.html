@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APPOINTMENT</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script src="javascript.js"></script>
+  </head>
+  <body>
+    <div class="section">
+      <div class="main-section">
+        <h1>Your smile starts here.</h1>
+
+        <p>
+          Get started at our modern First Hill office in Seattle using the form
+          below, or give us a call at (206) 325-0166 to chat with our helpful
+          front office team—we’re cool with texting, too!
+        </p>
+        <h4>REQUEST AN APPOINTMENT</h4>
+
+        <form onsubmit="submitForm(event)">
+          <!-- Name -->
+          <label for="firstName">First Name </label>
+          <input type="text" id="firstName" name="firstName" required /><br />
+
+          <label for="lastName">Last Name </label>
+          <input type="text" id="lastName" name="lastName" required /><br />
+
+          <!-- Email -->
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required /><br />
+
+          <!-- Phone -->
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required /><br />
+
+          <!-- How to reach -->
+          <h3>How should we reach you?</h3>
+          <div class="input-section">
+            <input type="radio" value="true" checked name="call me" /> Call Me
+            <br />
+            <input type="radio" value="text me" id="textMe" /> Text Me<br />
+            <input type="radio" value="email me" id="emailMe" /> Email Me
+          </div>
+          <hr class="horizontal-divider" />
+
+          <h3>Have we seen you before?</h3>
+          <div class="input patient">
+            <input
+              type="radio"
+              name="isNewPatient"
+              id="newPatient"
+              value="true"
+              checked
+              class="input-field"
+            />
+            I'm a new Patient
+          </div>
+
+          <div class="newPatient">
+            <input
+              type="radio"
+              name="isNewPatient"
+              id="returningPatient"
+              value="false"
+              class="input-field"
+            />
+            I'm a returning Patient
+          </div>
+          <br />
+
+          <!--Specific Provider-->
+          <label for="provider"
+            >Do you have a specific provider you'd like to see?</label
+          >
+          <select id="provider" name="provider">
+            <option value="noPreference" selected>No Preference</option>
+            <option value="DrMichaelMulick">Dr. Michael Mulick</option>
+            <option value="DrNickRadandt">Dr. Nick Radandt</option>
+            <option value="DrShanaReidy">Dr. Shana Reidy</option>
+            <option value="DrBrigitteHiggins">Dr. Brigitte Higgins</option>
+            <option value="DrJakeEricksen">Dr. Jake Ericksen</option>
+            <!-- Add provider options here --></select
+          ><br />
+          <hr class="horizontal-divider" />
+          <!-- Message -->
+          <label for="message">Message: </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Type your message here"
+          ></textarea>
+
+          <!-- How did you hear about us? -->
+          <label for="heardAbout">How did you hear about us? </label>
+          <select id="heardAbout" name="heardAbout">
+            <option value="option1">Web Search</option>
+            <option value="option2">Facebook</option>
+            <option value="option3">Referral from friend/family</option>
+            <option value="option4">Referral from another practice</option>
+            <option value="option5">I saw an advertisement</option>
+            <option value="option6">I'm current patient</option>
+            <option value="option7">Other</option>
+            <!-- Add more options here --></select
+          ><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="google-maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.5852585483613!2d21.170140976283474!3d42.648951616801114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec0d5603ad7%3A0x1ba2ce0329d66240!2sRruga%20B%2C%20Prishtina!5e0!3m2!1sen!2s!4v1705603956617!5m2!1sen!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="aside-section">
+          <aside class="contact-info">
+            <h4>CONTACT INFORMATION</h4>
+            <p id="contact">
+              Dental Care Seattle<br />
+              600 Broadway, Suite 330<br />
+              Seattle, WA, 98122
+            </p>
+
+            <p id="contact-number">
+              Call or Text: (206) 325-0166<br />
+              Fax: (206) 322-9345<br />
+              Email:
+              <a href="mailto:smiles@dentalcareseattle.com"
+                >smiles@dentalcareseattle.com</a
+              >
+            </p>
+          </aside>
+        </div>
+        <aside class="hours-info">
+          <h4 id="hours-secition">Hours</h4>
+          <p>
+            Monday — 7am to 5pm<br />
+            Tuesday — 7am to 5pm<br />
+            Wednesday — 7am to 5pm<br />
+            Thursday — 7am to 5pm<br />
+            Friday — 7am to 3pm<br />
+            Saturday — Closed<br />
+            Sunday — Closed
+          </p>
+        </aside>
+
+        <aside class="hiring-info">
+          <h4>WE'RE HIRING!</h4>
+          <p style="font-size: 14px">
+            Visit our Careers page to explore opportunities to join our team.
+          </p>
+        </aside>
+
+        <aside class="emergency-info">
+          <h4 id="emergency-secition">EMERGENCIES</h4>
+          <p>
+            Call us for emergency dental treatment at our office in the 600
+            Broadway building on First Hill, with quick access to cexntral
+            Capitol Hill.
+          </p>
+        </aside>
+
+        <aside class="parking-info">
+          <h4 id="parking-secition">PARKING</h4>
+          <p>
+            Parking is available in our building, with access at the bottom of
+            Cherry Street on the North side. Street parking is also available on
+            two-hour parking meters on each street surrounding our location.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
